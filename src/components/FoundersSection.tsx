@@ -22,9 +22,9 @@ const FoundersSection = () => {
       avatar: "/lovable-uploads/d120b554-c035-4b38-a9c7-b1945d6d4e75.png"
     },
     {
-      name: "Clara Oliveira",
+      name: "Rosane Brizola",
       style: "Artístico Contemporâneo",
-      bio: "Artista visual que vê na moda uma tela para expressão. Clara traz as peças mais criativas e ousadas para o S.A.M.B.A.",
+      bio: "Apaixonada por peças clássicas que nunca saem de moda, Rosane traz ao S.A.M.B.A.,elegância atemporal e estilo único.",
       quote: "A moda é arte que vestimos. Cada look é uma oportunidade de contar nossa história.",
       specialty: "Peças criativas e estampas únicas",
       avatar: "/lovable-uploads/fa9f2894-4d4c-4f77-9e5d-2c48ccbf8f06.png"
