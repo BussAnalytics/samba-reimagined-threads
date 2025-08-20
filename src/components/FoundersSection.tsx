@@ -27,7 +27,7 @@ const FoundersSection = () => {
       bio: "Artista visual que vê na moda uma tela para expressão. Clara traz as peças mais criativas e ousadas para o S.A.M.B.A.",
       quote: "A moda é arte que vestimos. Cada look é uma oportunidade de contar nossa história.",
       specialty: "Peças criativas e estampas únicas",
-      avatar: "https://images.unsplash.com/photo-1488508872907-592763824245?w=400&h=400&fit=crop&crop=face"
+      avatar: "/lovable-uploads/f411afe1-145f-455c-8e5d-92a26ac642a6.png"
     }
   ];
 
