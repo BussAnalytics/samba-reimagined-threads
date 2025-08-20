@@ -10,25 +10,15 @@ const HeroSection = () => {
   };
   return <section id="inicio" className="min-h-screen flex items-end justify-center relative overflow-hidden pb-20">
       {/* Background Image - Otimizada para mobile */}
-      <img 
-        src="/lovable-uploads/a285b69e-603e-438c-b772-f660e80ded67.png" 
-        alt="S.A.M.B.A Hero Background" 
-        className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-top"
-      />
+      <img src="/lovable-uploads/a285b69e-603e-438c-b772-f660e80ded67.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-top" />
       
 
       {/* Floating Elements */}
-      <img 
-        src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" 
-        alt="S.A.M.B.A Logo" 
-        className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"
-      />
+      <img src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" alt="S.A.M.B.A Logo" className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float" />
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{
       animationDelay: '1s'
     }}></div>
-      <div className="absolute top-1/3 right-20 w-12 h-12 bg-ferrugem/25 rounded-full animate-float" style={{
-      animationDelay: '2s'
-    }}></div>
+      
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
@@ -59,9 +49,7 @@ const HeroSection = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-foreground/50 rounded-full flex justify-center mx-0 py-0 my-0 px-0">
-            <div className="w-1 h-3 bg-foreground/50 rounded-full mt-2 animate-pulse"></div>
-          </div>
+          
         </div>
       </div>
     </section>;
