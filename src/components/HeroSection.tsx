@@ -10,12 +10,26 @@ const HeroSection = () => {
   };
   return <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image */}
-      <img src="/lovable-uploads/128b40b2-330e-4532-9433-050aeb10b20a.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-cover object-center scale-110" />
-      <img src="" alt="Overlay" className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/40" />
+      <img 
+        src="/lovable-uploads/128b40b2-330e-4532-9433-050aeb10b20a.png" 
+        alt="S.A.M.B.A Hero Background" 
+        className="absolute inset-0 w-full h-full object-cover object-center scale-110"
+      />
+      <img 
+        src="" 
+        alt="Overlay" 
+        className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/40"
+      />
 
       {/* Floating Elements */}
-      <img src="" alt="Floating element" className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float" />
-      
+      <img 
+        src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" 
+        alt="S.A.M.B.A Logo" 
+        className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"
+      />
+      <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{
+      animationDelay: '1s'
+    }}></div>
       <div className="absolute top-1/3 right-20 w-12 h-12 bg-ferrugem/25 rounded-full animate-float" style={{
       animationDelay: '2s'
     }}></div>
