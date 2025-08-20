@@ -1,46 +1,37 @@
 import { Recycle, Sparkles, Zap, ShoppingBag, Palette } from 'lucide-react';
-
 const AboutSection = () => {
-  const sambaLetters = [
-    {
-      letter: 'S',
-      word: 'Sustentabilidade',
-      icon: Recycle,
-      description: 'Moda circular que preserva o planeta e valoriza cada peça.',
-      color: 'text-accent'
-    },
-    {
-      letter: 'A',
-      word: 'Autenticidade',
-      icon: Sparkles,
-      description: 'Peças únicas que contam histórias e expressam personalidade.',
-      color: 'text-primary'
-    },
-    {
-      letter: 'M',
-      word: 'Movimento',
-      icon: Zap,
-      description: 'Dinamismo e energia que transformam o jeito de vestir.',
-      color: 'text-ferrugem'
-    },
-    {
-      letter: 'B',
-      word: 'Brechó',
-      icon: ShoppingBag,
-      description: 'Tradição renovada com curadoria moderna e afetiva.',
-      color: 'text-accent'
-    },
-    {
-      letter: 'A',
-      word: 'Beleza',
-      icon: Palette,
-      description: 'Estilo próprio que nasce da união de três visões criativas.',
-      color: 'text-primary'
-    }
-  ];
-
-  return (
-    <section id="sobre" className="section-padding bg-gradient-subtle">
+  const sambaLetters = [{
+    letter: 'S',
+    word: 'Sustentabilidade',
+    icon: Recycle,
+    description: 'Moda circular que preserva o planeta e valoriza cada peça.',
+    color: 'text-accent'
+  }, {
+    letter: 'A',
+    word: 'Autenticidade',
+    icon: Sparkles,
+    description: 'Peças únicas que contam histórias e expressam personalidade.',
+    color: 'text-primary'
+  }, {
+    letter: 'M',
+    word: 'Movimento',
+    icon: Zap,
+    description: 'Dinamismo e energia que transformam o jeito de vestir.',
+    color: 'text-ferrugem'
+  }, {
+    letter: 'B',
+    word: 'Brechó',
+    icon: ShoppingBag,
+    description: 'Tradição renovada com curadoria moderna e afetiva.',
+    color: 'text-accent'
+  }, {
+    letter: 'A',
+    word: 'Autoral',
+    icon: Palette,
+    description: 'Estilo próprio que nasce da união de três visões criativas.',
+    color: 'text-primary'
+  }];
+  return <section id="sobre" className="section-padding bg-gradient-subtle">
       <div className="container-samba">
         {/* Header */}
         <div className="text-center mb-16">
@@ -56,13 +47,10 @@ const AboutSection = () => {
         {/* SAMBA Letters Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {sambaLetters.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <div 
-                key={index}
-                className="group bg-card rounded-2xl p-8 card-hover border border-border/50"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+          const Icon = item.icon;
+          return <div key={index} className="group bg-card rounded-2xl p-8 card-hover border border-border/50" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <div className="flex items-center mb-4">
                   <div className={`w-12 h-12 rounded-full bg-gradient-to-r from-primary to-ferrugem flex items-center justify-center mr-4`}>
                     <span className="font-playfair text-xl font-bold text-white">
@@ -79,9 +67,8 @@ const AboutSection = () => {
                 <p className="font-poppins text-muted-foreground leading-relaxed">
                   {item.description}
                 </p>
-              </div>
-            );
-          })}
+              </div>;
+        })}
         </div>
 
         {/* Mission Statement */}
@@ -91,16 +78,11 @@ const AboutSection = () => {
               "Mais que roupas usadas, histórias reescritas."
             </blockquote>
             
-            <p className="font-poppins text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              O S.A.M.B.A nasceu da união de três paixões por moda e propósito. Aqui, cada peça é escolhida 
-              com carinho e cada detalhe conta uma história — a sua e a nossa. Acreditamos que a moda pode 
-              ser uma forma de resistência, arte e expressão, sempre com consciência e responsabilidade.
-            </p>
+            <p className="font-poppins text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">O S.A.M.B.A nasceu da união de três paixões por moda e propósito. Aqui, cada peça é escolhida com carinho e cada detalhe conta uma história — a sua e a nossa. Acreditamos que a moda pode ser uma forma de resistência, arte e expressão, sempre com consciência e responsabilidade. 
+       E os pontos entre as letras ? São as agulhas costurando esse manifesto.</p>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
