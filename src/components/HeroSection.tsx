@@ -16,8 +16,6 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full object-cover object-top"
       />
       
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/40"></div>
 
       {/* Floating Elements */}
       <img 
