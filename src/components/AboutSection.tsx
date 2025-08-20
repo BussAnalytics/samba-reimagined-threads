@@ -4,25 +4,25 @@ const AboutSection = () => {
     letter: 'S',
     word: 'Sustentabilidade',
     icon: Recycle,
-    description: 'Moda circular que preserva o planeta e valoriza cada peça.',
+    description: 'como a roda da moda que não para.',
     color: 'text-accent'
   }, {
     letter: 'A',
     word: 'Autenticidade',
     icon: Sparkles,
-    description: 'Peças únicas que contam histórias e expressam personalidade.',
+    description: 'Como quem dança sem plateia.',
     color: 'text-primary'
   }, {
     letter: 'M',
     word: 'Movimento',
     icon: Zap,
-    description: 'Dinamismo e energia que transformam o jeito de vestir.',
+    description: 'Que gira ideias, corpos e histórias.',
     color: 'text-ferrugem'
   }, {
     letter: 'B',
     word: 'Brechó',
     icon: ShoppingBag,
-    description: 'Tradição renovada com curadoria moderna e afetiva.',
+    description: 'Feita de improviso e recomeço.',
     color: 'text-accent'
   }, {
     letter: 'A',
