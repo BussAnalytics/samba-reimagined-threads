@@ -43,7 +43,7 @@ const ContactSection = () => {
   }, {
     icon: MapPin,
     title: "Localização",
-    content: "São Paulo, SP",
+    content: "R. Anitta Garibaldi, 159 - Florianópolis / SC",
     link: "#"
   }, {
     icon: Instagram,
@@ -82,7 +82,7 @@ const ContactSection = () => {
                   key={index} 
                   onClick={() => {
                     if (index === 2) {
-                      window.open("https://share.google.com/OkThdHlk8rWKKSLQ2", '_blank');
+                      window.open("https://www.google.com/search?q=samba+brech%C3%B3+colaborativo&oq=samba+brech%C3%B3+colaborativo&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDYwOTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8", '_blank');
                     } else if (info.link.startsWith('http')) {
                       window.open(info.link, '_blank');
                     } else if (info.link.startsWith('mailto:')) {
