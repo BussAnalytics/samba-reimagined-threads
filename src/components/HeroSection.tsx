@@ -13,13 +13,11 @@ const HeroSection = () => {
       <img 
         src="/lovable-uploads/128b40b2-330e-4532-9433-050aeb10b20a.png" 
         alt="S.A.M.B.A Hero Background" 
-        className="absolute inset-0 w-full h-full object-cover object-center scale-110"
+        className="absolute inset-0 w-full h-full object-cover object-top"
       />
-      <img 
-        src="" 
-        alt="Overlay" 
-        className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/40"
-      />
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/40"></div>
 
       {/* Floating Elements */}
       <img 
