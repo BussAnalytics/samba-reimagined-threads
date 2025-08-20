@@ -9,11 +9,11 @@ const HeroSection = () => {
     }
   };
   return <section id="inicio" className="min-h-screen flex items-end justify-center relative overflow-hidden pb-20">
-      {/* Background Image */}
+      {/* Background Image - Otimizada para mobile */}
       <img 
         src="/lovable-uploads/a285b69e-603e-438c-b772-f660e80ded67.png" 
         alt="S.A.M.B.A Hero Background" 
-        className="absolute inset-0 w-full h-full object-cover object-top"
+        className="absolute inset-0 w-full h-full object-cover object-center md:object-top"
       />
       
 
