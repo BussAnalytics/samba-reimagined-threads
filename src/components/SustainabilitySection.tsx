@@ -33,7 +33,7 @@ const SustainabilitySection = () => {
             
             <p className="font-poppins text-lg text-muted-foreground leading-relaxed mb-8">
               Acreditamos que a moda pode ser uma força de transformação positiva. 
-              No SAMBA, cada peça é um ato de resistência contra o consumo desenfreado 
+              No S.A.M.B.A, cada peça é um ato de resistência contra o consumo desenfreado 
               e uma celebração da economia circular.
             </p>
 

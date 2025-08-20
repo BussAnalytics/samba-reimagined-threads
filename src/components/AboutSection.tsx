@@ -45,7 +45,7 @@ const AboutSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gradient mb-6">
-            O que é SAMBA?
+            O que é S.A.M.B.A?
           </h2>
           <p className="font-poppins text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Um brechó colaborativo que une três estilos, três histórias e um só propósito: 
@@ -92,7 +92,7 @@ const AboutSection = () => {
             </blockquote>
             
             <p className="font-poppins text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              O SAMBA nasceu da união de três paixões por moda e propósito. Aqui, cada peça é escolhida 
+              O S.A.M.B.A nasceu da união de três paixões por moda e propósito. Aqui, cada peça é escolhida 
               com carinho e cada detalhe conta uma história — a sua e a nossa. Acreditamos que a moda pode 
               ser uma forma de resistência, arte e expressão, sempre com consciência e responsabilidade.
             </p>

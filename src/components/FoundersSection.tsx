@@ -8,7 +8,7 @@ const FoundersSection = () => {
     {
       name: "Ana Silva",
       style: "Vintage Elegante",
-      bio: "Apaixonada por peças clássicas que nunca saem de moda. Ana traz ao SAMBA o olhar refinado para vintage autêntico.",
+      bio: "Apaixonada por peças clássicas que nunca saem de moda. Ana traz ao S.A.M.B.A o olhar refinado para vintage autêntico.",
       quote: "Cada peça vintage tem uma alma. Meu papel é encontrar essa alma e conectá-la com quem vai amá-la.",
       specialty: "Peças clássicas dos anos 70-90",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
@@ -16,7 +16,7 @@ const FoundersSection = () => {
     {
       name: "Beatriz Santos",
       style: "Minimalista Urbano",
-      bio: "Designer de formação, Bia enxerga beleza na simplicidade e funcionalidade. Curadora das peças atemporais do SAMBA.",
+      bio: "Designer de formação, Bia enxerga beleza na simplicidade e funcionalidade. Curadora das peças atemporais do S.A.M.B.A.",
       quote: "Menos é mais quando cada peça foi escolhida com propósito e cuidado.",
       specialty: "Básicos atemporais e peças funcionais",
       avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=face"
@@ -24,7 +24,7 @@ const FoundersSection = () => {
     {
       name: "Clara Oliveira",
       style: "Artístico Contemporâneo",
-      bio: "Artista visual que vê na moda uma tela para expressão. Clara traz as peças mais criativas e ousadas para o SAMBA.",
+      bio: "Artista visual que vê na moda uma tela para expressão. Clara traz as peças mais criativas e ousadas para o S.A.M.B.A.",
       quote: "A moda é arte que vestimos. Cada look é uma oportunidade de contar nossa história.",
       specialty: "Peças criativas e estampas únicas",
       avatar: "https://images.unsplash.com/photo-1488508872907-592763824245?w=400&h=400&fit=crop&crop=face"
@@ -37,7 +37,7 @@ const FoundersSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gradient mb-6">
-            As Mulheres do SAMBA
+            As Mulheres do S.A.M.B.A
           </h2>
           <p className="font-poppins text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Três mulheres, três brechós, um só propósito: fazer da moda uma forma de resistência, arte e expressão.

@@ -25,7 +25,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <h1 className="font-playfair text-3xl font-bold text-gradient">
-              SAMBA
+              S.A.M.B.A
             </h1>
           </div>
 
@@ -38,7 +38,7 @@ const Header = () => {
               Sobre
             </button>
             <button onClick={() => scrollToSection('mulheres')} className="text-foreground hover:text-primary transition-colors duration-300">
-              As Mulheres do Samba
+              As Mulheres do S.A.M.B.A
             </button>
             
             <button onClick={() => scrollToSection('contato')} className="text-foreground hover:text-primary transition-colors duration-300">
@@ -63,7 +63,7 @@ const Header = () => {
                 Sobre
               </button>
               <button onClick={() => scrollToSection('mulheres')} className="text-foreground hover:text-primary transition-colors duration-300 text-left">
-                As Mulheres do Samba
+                As Mulheres do S.A.M.B.A
               </button>
               <button onClick={() => scrollToSection('acervo')} className="text-foreground hover:text-primary transition-colors duration-300 text-left">
                 Peças
