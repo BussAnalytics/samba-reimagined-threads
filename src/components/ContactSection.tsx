@@ -83,6 +83,8 @@ const ContactSection = () => {
                   onClick={() => {
                     if (index === 2) {
                       window.open("https://www.google.com/search?q=samba+brech%C3%B3+colaborativo&oq=samba+brech%C3%B3+colaborativo&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDYwOTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8", '_blank');
+                    } else if (index === 3) {
+                      window.open("https://www.instagram.com/sambabrechocolaborativo/", '_blank');
                     } else if (info.link.startsWith('http')) {
                       window.open(info.link, '_blank');
                     } else if (info.link.startsWith('mailto:')) {
