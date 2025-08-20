@@ -54,6 +54,20 @@ const CollectionSection = () => {
     curator: "Clara"
   }];
   const filteredPieces = activeFilter === 'Todos' ? pieces : pieces.filter(piece => piece.category === activeFilter);
-  return;
+  
+  return (
+    <section id="colecao" className="section-padding">
+      <div className="container-samba">
+        <div className="text-center mb-16">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gradient mb-6">
+            Nossa Coleção
+          </h2>
+          <p className="font-poppins text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Peças únicas curadas com amor por nossas fundadoras
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 };
 export default CollectionSection;
