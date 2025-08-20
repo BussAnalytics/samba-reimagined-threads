@@ -11,9 +11,9 @@ const HeroSection = () => {
   return <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image */}
       <img 
-        src="/lovable-uploads/a285b69e-603e-438c-b772-f660e80ded67.png" 
+        src="/lovable-uploads/3f5086fe-d3af-4dac-ad0d-819edb7ca67c.png" 
         alt="S.A.M.B.A Hero Background" 
-        className="absolute inset-0 w-full h-full object-cover object-top"
+        className="absolute inset-0 w-full h-full object-cover object-center"
       />
       
       {/* Overlay */}
