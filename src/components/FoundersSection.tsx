@@ -19,7 +19,7 @@ const FoundersSection = () => {
       bio: "Designer de formação, Bia enxerga beleza na simplicidade e funcionalidade. Curadora das peças atemporais do S.A.M.B.A.",
       quote: "Menos é mais quando cada peça foi escolhida com propósito e cuidado.",
       specialty: "Básicos atemporais e peças funcionais",
-      avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=face"
+      avatar: "/lovable-uploads/73a29207-9c15-4935-8a3c-caf0a8d099c4.png"
     },
     {
       name: "Clara Oliveira",
