@@ -56,7 +56,7 @@ const FoundersSection = () => {
                 <img 
                   src={founder.avatar}
                   alt={founder.name}
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               
