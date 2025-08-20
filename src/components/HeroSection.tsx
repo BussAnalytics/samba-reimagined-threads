@@ -36,13 +36,13 @@ const HeroSection = () => {
           <span className="text-gradient">S.A.M.B.A</span>
         </h1>
         
-        <p className="font-playfair text-xl md:text-2xl lg:text-3xl text-foreground/90 mb-4 animate-fade-in-up" style={{
+        <p className="font-playfair text-xl md:text-2xl lg:text-3xl text-black mb-4 animate-fade-in-up" style={{
         animationDelay: '0.2s'
       }}>
           mais que moda, um manifesto
         </p>
         
-        <p className="font-poppins text-lg md:text-xl text-foreground/80 mb-8 animate-fade-in-up" style={{
+        <p className="font-poppins text-lg md:text-xl text-black mb-8 animate-fade-in-up" style={{
         animationDelay: '0.4s'
       }}>
           Sustentável. Autêntico. Em movimento.
