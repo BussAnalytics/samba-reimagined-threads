@@ -32,7 +32,7 @@ const AboutSection = () => {
     },
     {
       letter: 'A',
-      word: 'Autoral',
+      word: 'Beleza',
       icon: Palette,
       description: 'Estilo próprio que nasce da união de três visões criativas.',
       color: 'text-primary'
