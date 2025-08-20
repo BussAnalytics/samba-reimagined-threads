@@ -96,26 +96,7 @@ const ContactSection = () => {
             </div>
 
             {/* Instagram Feed Placeholder */}
-            <div className="bg-card rounded-3xl p-8 border border-border/50">
-              <h4 className="font-playfair text-xl font-bold text-foreground mb-4 flex items-center">
-                <Instagram className="w-5 h-5 mr-2 text-primary" />
-                Siga nosso Instagram
-              </h4>
-              <p className="font-poppins text-muted-foreground mb-4">
-                Acompanhe as novidades, bastidores e muito estilo no @sambabreu
-              </p>
-              
-              {/* Instagram Grid Mockup */}
-              <div className="grid grid-cols-3 gap-2">
-                {[...Array(6)].map((_, i) => <div key={i} className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
-                    <Instagram className="w-6 h-6 text-primary/50" />
-                  </div>)}
-              </div>
-              
-              <a href="https://instagram.com/sambabreu" target="_blank" rel="noopener noreferrer" className="block w-full mt-4 btn-samba-outline text-center">
-                Seguir @sambabreu
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>
