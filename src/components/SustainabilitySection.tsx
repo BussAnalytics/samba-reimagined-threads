@@ -1,36 +1,28 @@
 import { Recycle, Heart, Zap, Leaf } from 'lucide-react';
 import sustainabilityImage from '@/assets/sustainability-concept.jpg';
-
 const SustainabilitySection = () => {
-  const impactItems = [
-    {
-      icon: Recycle,
-      title: "Redução de Resíduos",
-      description: "Cada peça que encontra um novo lar é uma peça que não vai para o aterro. Circular é cuidar.",
-      stat: "1000+ peças ressignificadas"
-    },
-    {
-      icon: Heart,
-      title: "Consumo Consciente",
-      description: "Compramos menos, escolhemos melhor. Cada aquisição é um voto no mundo que queremos.",
-      stat: "95% satisfação dos clientes"
-    },
-    {
-      icon: Zap,
-      title: "Curadoria Afetiva",
-      description: "Selecionamos com carinho, pensando na história de cada peça e na pessoa que vai amá-la.",
-      stat: "3 curadoras especialistas"
-    },
-    {
-      icon: Leaf,
-      title: "Impacto Positivo",
-      description: "Moda que regenera: cada compra contribui para um futuro mais sustentável e consciente.",
-      stat: "100% moda circular"
-    }
-  ];
-
-  return (
-    <section id="sustentabilidade" className="section-padding">
+  const impactItems = [{
+    icon: Recycle,
+    title: "Redução de Resíduos",
+    description: "Cada peça que encontra um novo lar é uma peça que não vai para o aterro. Circular é cuidar.",
+    stat: "1000+ peças ressignificadas"
+  }, {
+    icon: Heart,
+    title: "Consumo Consciente",
+    description: "Compramos menos, escolhemos melhor. Cada aquisição é um voto no mundo que queremos.",
+    stat: "95% satisfação dos clientes"
+  }, {
+    icon: Zap,
+    title: "Curadoria Afetiva",
+    description: "Selecionamos com carinho, pensando na história de cada peça e na pessoa que vai amá-la.",
+    stat: "3 curadoras especialistas"
+  }, {
+    icon: Leaf,
+    title: "Impacto Positivo",
+    description: "Moda que regenera: cada compra contribui para um futuro mais sustentável e consciente.",
+    stat: "100% moda circular"
+  }];
+  return <section id="sustentabilidade" className="section-padding">
       <div className="container-samba">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
@@ -47,13 +39,10 @@ const SustainabilitySection = () => {
 
             <div className="space-y-6">
               {impactItems.map((item, index) => {
-                const Icon = item.icon;
-                return (
-                  <div 
-                    key={index}
-                    className="flex items-start space-x-4 p-4 rounded-xl hover:bg-muted/50 transition-colors duration-300"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
+              const Icon = item.icon;
+              return <div key={index} className="flex items-start space-x-4 p-4 rounded-xl hover:bg-muted/50 transition-colors duration-300" style={{
+                animationDelay: `${index * 0.1}s`
+              }}>
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
@@ -69,20 +58,15 @@ const SustainabilitySection = () => {
                         {item.stat}
                       </span>
                     </div>
-                  </div>
-                );
-              })}
+                  </div>;
+            })}
             </div>
           </div>
 
           {/* Image */}
           <div className="relative">
             <div className="relative z-10">
-              <img 
-                src={sustainabilityImage}
-                alt="Conceito de sustentabilidade na moda"
-                className="w-full h-[500px] object-cover rounded-3xl shadow-elegant"
-              />
+              <img src={sustainabilityImage} alt="Conceito de sustentabilidade na moda" className="w-full h-[500px] object-cover rounded-3xl shadow-elegant" />
               
               {/* Overlay Stats */}
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent rounded-3xl"></div>
@@ -108,7 +92,9 @@ const SustainabilitySection = () => {
 
             {/* Background Elements */}
             <div className="absolute -top-8 -right-8 w-32 h-32 bg-primary/10 rounded-full animate-float"></div>
-            <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-accent/15 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-accent/15 rounded-full animate-float" style={{
+            animationDelay: '1s'
+          }}></div>
           </div>
         </div>
 
@@ -124,14 +110,10 @@ const SustainabilitySection = () => {
             <button className="btn-samba">
               Descobrir peças
             </button>
-            <button className="btn-samba-outline">
-              Saber mais
-            </button>
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SustainabilitySection;
