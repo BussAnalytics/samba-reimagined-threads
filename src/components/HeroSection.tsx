@@ -23,8 +23,8 @@ const HeroSection = () => {
 
       {/* Floating Elements */}
       <img 
-        src="" 
-        alt="Floating element" 
+        src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" 
+        alt="S.A.M.B.A Logo" 
         className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"
       />
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{
