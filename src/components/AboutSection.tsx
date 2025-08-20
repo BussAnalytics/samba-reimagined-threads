@@ -20,7 +20,7 @@ const AboutSection = () => {
     color: 'text-ferrugem'
   }, {
     letter: 'B',
-    word: 'Brechó',
+    word: 'Beleza',
     icon: ShoppingBag,
     description: 'Feita de improviso e recomeço.',
     color: 'text-accent'
