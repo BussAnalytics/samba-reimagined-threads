@@ -8,7 +8,7 @@ const HeroSection = () => {
       });
     }
   };
-  return <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+  return <section id="inicio" className="min-h-screen flex items-end justify-center relative overflow-hidden pb-20">
       {/* Background Image */}
       <img 
         src="/lovable-uploads/a285b69e-603e-438c-b772-f660e80ded67.png" 
