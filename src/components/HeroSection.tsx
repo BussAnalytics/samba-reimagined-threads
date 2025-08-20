@@ -13,7 +13,7 @@ const HeroSection = () => {
       <img 
         src="/lovable-uploads/128b40b2-330e-4532-9433-050aeb10b20a.png" 
         alt="S.A.M.B.A Hero Background" 
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-center scale-110"
       />
       <img 
         src="" 
