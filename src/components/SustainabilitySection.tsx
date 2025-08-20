@@ -63,27 +63,6 @@ const SustainabilitySection = () => {
           <div className="relative">
             <div className="relative z-10">
               <img src="/lovable-uploads/b7abc560-1c39-4994-8e0b-a6ee89a690a9.png" alt="Peças de roupa sustentáveis do S.A.M.B.A" className="w-full h-[500px] object-cover rounded-3xl shadow-elegant" />
-              
-              {/* Overlay Stats */}
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent rounded-3xl"></div>
-              
-              <div className="absolute bottom-8 left-8 right-8">
-                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6">
-                  <h4 className="font-playfair text-xl font-bold text-foreground mb-3">
-                    Nosso Impacto
-                  </h4>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="text-center">
-                      <div className="font-poppins text-2xl font-bold text-primary">2k+</div>
-                      <div className="font-poppins text-xs text-muted-foreground">Peças circulando</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="font-poppins text-2xl font-bold text-accent">500+</div>
-                      <div className="font-poppins text-xs text-muted-foreground">Clientes felizes</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Background Elements */}
@@ -91,6 +70,25 @@ const SustainabilitySection = () => {
             <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-accent/15 rounded-full animate-float" style={{
             animationDelay: '1s'
           }}></div>
+
+            {/* Impact Stats Card */}
+            <div className="mt-8">
+              <div className="bg-card/90 backdrop-blur-sm rounded-2xl p-6 border border-border/50">
+                <h4 className="font-playfair text-xl font-bold text-foreground mb-3">
+                  Nosso Impacto
+                </h4>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="text-center">
+                    <div className="font-poppins text-2xl font-bold text-primary">2k+</div>
+                    <div className="font-poppins text-xs text-muted-foreground">Peças circulando</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-poppins text-2xl font-bold text-accent">500+</div>
+                    <div className="font-poppins text-xs text-muted-foreground">Clientes felizes</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
