@@ -6,9 +6,9 @@ const FoundersSection = () => {
 
   const founders = [
     {
-      name: "Ana Silva",
+      name: "Debora Caminha",
       style: "Vintage Elegante",
-      bio: "Apaixonada por peças clássicas que nunca saem de moda. Ana traz ao S.A.M.B.A o olhar refinado para vintage autêntico.",
+      bio: "Débora transforma sua paixão pelo vintage em curadoria única, escolhendo peças atemporais que unem simplicidade, funcionalidade e estilo para o S.A.M.B.A.",
       quote: "Cada peça vintage tem uma alma. Meu papel é encontrar essa alma e conectá-la com quem vai amá-la.",
       specialty: "Peças clássicas dos anos 70-90",
       avatar: "/lovable-uploads/7d933f55-012b-43f1-b152-8b2c0950bbd9.png"
