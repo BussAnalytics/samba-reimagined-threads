@@ -78,7 +78,19 @@ const ContactSection = () => {
               <div className="space-y-6">
                 {contactInfo.map((info, index) => {
                 const Icon = info.icon;
-                return <a key={index} href={index === 2 ? "https://share.google.com/OkThdHlk8rWKKSLQ2" : info.link} target={info.link.startsWith('http') || index === 2 ? '_blank' : '_self'} rel={info.link.startsWith('http') || index === 2 ? 'noopener noreferrer' : ''} className="flex items-center space-x-4 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group cursor-pointer">
+                return <div 
+                  key={index} 
+                  onClick={() => {
+                    if (index === 2) {
+                      window.open("https://share.google.com/OkThdHlk8rWKKSLQ2", '_blank');
+                    } else if (info.link.startsWith('http')) {
+                      window.open(info.link, '_blank');
+                    } else if (info.link.startsWith('mailto:')) {
+                      window.location.href = info.link;
+                    }
+                  }}
+                  className="flex items-center space-x-4 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group cursor-pointer"
+                >
                       <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
@@ -90,7 +102,7 @@ const ContactSection = () => {
                           {info.content}
                         </p>
                       </div>
-                    </a>;
+                    </div>;
               })}
               </div>
             </div>
