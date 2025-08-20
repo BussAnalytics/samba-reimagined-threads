@@ -10,11 +10,21 @@ const HeroSection = () => {
   };
   return <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image */}
-      <img src="/lovable-uploads/128b40b2-330e-4532-9433-050aeb10b20a.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-cover object-center scale-110" />
-      <img src="" alt="Overlay" className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/40" />
+      <img 
+        src="/lovable-uploads/a285b69e-603e-438c-b772-f660e80ded67.png" 
+        alt="S.A.M.B.A Hero Background" 
+        className="absolute inset-0 w-full h-full object-cover object-top"
+      />
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/40"></div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"></div>
+      <img 
+        src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" 
+        alt="S.A.M.B.A Logo" 
+        className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"
+      />
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{
       animationDelay: '1s'
     }}></div>
@@ -25,7 +35,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
-          <span className="text-gradient mx-0 my-0 px-0 py-0">S.A.M.B.A</span>
+          <span className="text-gradient">S.A.M.B.A</span>
         </h1>
         
         <p className="font-playfair text-xl md:text-2xl lg:text-3xl text-foreground/90 mb-4 animate-fade-in-up" style={{
