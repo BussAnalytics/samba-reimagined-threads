@@ -54,6 +54,93 @@ const CollectionSection = () => {
     curator: "Clara"
   }];
   const filteredPieces = activeFilter === 'Todos' ? pieces : pieces.filter(piece => piece.category === activeFilter);
-  return;
+  
+  return (
+    <section id="colecao" className="section-padding bg-background">
+      <div className="container-samba">
+        <div className="text-center mb-16">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gradient mb-6">
+            Nossa Coleção
+          </h2>
+          <p className="font-poppins text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Cada peça conta uma história. Descubra tesouros únicos selecionados com carinho pelas nossas curadoras.
+          </p>
+        </div>
+
+        {/* Filters */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`px-6 py-3 rounded-full font-poppins font-medium transition-all duration-300 ${
+                activeFilter === filter
+                  ? 'bg-gradient-to-r from-primary to-accent text-white shadow-lg'
+                  : 'bg-card text-muted-foreground hover:bg-card/80 border border-border/50'
+              }`}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        {/* Collection Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredPieces.map((piece) => (
+            <div key={piece.id} className="group bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover">
+              <div className="relative overflow-hidden">
+                <img
+                  src={piece.image}
+                  alt={piece.name}
+                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 right-4 flex gap-2">
+                  <button className="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200">
+                    <Heart className="w-5 h-5 text-primary" />
+                  </button>
+                  <button className="w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-200">
+                    <ShoppingBag className="w-5 h-5 text-primary" />
+                  </button>
+                </div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-sm font-poppins font-medium text-primary">
+                    {piece.category}
+                  </span>
+                </div>
+              </div>
+              
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="font-playfair text-xl font-bold text-foreground">
+                    {piece.name}
+                  </h3>
+                  <span className="font-poppins text-lg font-bold text-primary">
+                    {piece.price}
+                  </span>
+                </div>
+                
+                <p className="font-poppins text-muted-foreground mb-4 leading-relaxed">
+                  {piece.description}
+                </p>
+                
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
+                      <span className="text-white text-sm font-medium">
+                        {piece.curator[0]}
+                      </span>
+                    </div>
+                    <span className="font-poppins text-sm text-muted-foreground">
+                      Curadoria: {piece.curator}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 export default CollectionSection;
