@@ -54,6 +54,79 @@ const CollectionSection = () => {
     curator: "Clara"
   }];
   const filteredPieces = activeFilter === 'Todos' ? pieces : pieces.filter(piece => piece.category === activeFilter);
-  return;
+
+  return (
+    <section id="colecao" className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Nossa Coleção</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Peças únicas selecionadas por nossas curadoras, cada uma com sua própria história e personalidade.
+          </p>
+        </div>
+
+        {/* Filtros */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`px-6 py-3 rounded-full transition-all duration-300 ${
+                activeFilter === filter
+                  ? 'bg-primary text-primary-foreground shadow-lg'
+                  : 'bg-muted text-muted-foreground hover:bg-primary/10'
+              }`}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        {/* Grid de Peças */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredPieces.map((piece) => (
+            <div key={piece.id} className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="relative overflow-hidden">
+                <img 
+                  src={piece.image} 
+                  alt={piece.name}
+                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 flex gap-2">
+                  <button className="p-2 bg-white/80 rounded-full hover:bg-white transition-colors">
+                    <Heart className="w-4 h-4" />
+                  </button>
+                  <button className="p-2 bg-white/80 rounded-full hover:bg-white transition-colors">
+                    <ShoppingBag className="w-4 h-4" />
+                  </button>
+                </div>
+                <div className="absolute bottom-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-sm">
+                  Curadoria: {piece.curator}
+                </div>
+              </div>
+              
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="text-xl font-semibold text-card-foreground">{piece.name}</h3>
+                  <span className="text-lg font-bold text-primary">{piece.price}</span>
+                </div>
+                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                  {piece.description}
+                </p>
+                <div className="flex justify-between items-center">
+                  <span className="text-xs bg-secondary text-secondary-foreground px-3 py-1 rounded-full">
+                    {piece.category}
+                  </span>
+                  <button className="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium">
+                    Ver Detalhes
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 export default CollectionSection;
