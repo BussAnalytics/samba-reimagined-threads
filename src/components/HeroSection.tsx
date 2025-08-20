@@ -22,7 +22,11 @@ const HeroSection = () => {
       />
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"></div>
+      <img 
+        src="" 
+        alt="Floating element" 
+        className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"
+      />
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{
       animationDelay: '1s'
     }}></div>
