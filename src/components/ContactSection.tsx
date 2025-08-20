@@ -41,11 +41,10 @@ const ContactSection = () => {
     content: "(11) 99999-9999",
     link: "https://wa.me/5511999999999"
   }, {
-    icon: MessageCircle,
-    title: "Chat Bot",
-    content: "Converse conosco",
-    link: "#",
-    isBot: true
+    icon: MapPin,
+    title: "Localização",
+    content: "São Paulo, SP",
+    link: "#"
   }, {
     icon: Instagram,
     title: "Instagram",
@@ -79,19 +78,7 @@ const ContactSection = () => {
               <div className="space-y-6">
                 {contactInfo.map((info, index) => {
                 const Icon = info.icon;
-                
-                if (info.isBot) {
-                  return (
-                    <button 
-                      key={index}
-                      onClick={() => {
-                        toast({
-                          title: "Bot em desenvolvimento! 🤖",
-                          description: "Em breve você poderá conversar com nosso assistente virtual para encontrar a peça perfeita!"
-                        });
-                      }}
-                      className="flex items-center space-x-4 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group w-full text-left"
-                    >
+                return <a key={index} href={info.link} target={info.link.startsWith('http') ? '_blank' : '_self'} rel={info.link.startsWith('http') ? 'noopener noreferrer' : ''} className="flex items-center space-x-4 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group">
                       <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
@@ -103,31 +90,7 @@ const ContactSection = () => {
                           {info.content}
                         </p>
                       </div>
-                    </button>
-                  );
-                }
-                
-                return (
-                  <a 
-                    key={index} 
-                    href={info.link} 
-                    target={info.link.startsWith('http') ? '_blank' : '_self'} 
-                    rel={info.link.startsWith('http') ? 'noopener noreferrer' : ''} 
-                    className="flex items-center space-x-4 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group"
-                  >
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-poppins font-medium text-foreground">
-                        {info.title}
-                      </h4>
-                      <p className="font-poppins text-muted-foreground">
-                        {info.content}
-                      </p>
-                    </div>
-                  </a>
-                );
+                    </a>;
               })}
               </div>
             </div>
