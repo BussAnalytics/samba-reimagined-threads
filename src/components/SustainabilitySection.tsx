@@ -31,11 +31,15 @@ const SustainabilitySection = () => {
               Sustentabilidade em Movimento
             </h2>
             
-            <p className="font-poppins text-lg text-muted-foreground leading-relaxed mb-8">
-              Acreditamos que a moda pode ser uma força de transformação positiva. 
-              No S.A.M.B.A, cada peça é um ato de resistência contra o consumo desenfreado 
-              e uma celebração da economia circular.
-            </p>
+            <p className="font-poppins text-lg text-muted-foreground leading-relaxed mb-8">A logo reflete o espírito do projeto: circularidade, elegância e autenticidade.
+ O acrônimo S.A.M.B.A aparece com pontos marcando a individualidade de cada valor, 
+organizados dentro de um formato circular que simboliza:
+ O ciclo do consumo consciente
+ A coletividade e o movimento
+ A ideia de um selo ou carimbo com identidade
+ A tipografia foi escolhida com base em sua expressão de contraste e personalidade,
+ remetendo a algo feito à mão, com alma e estilo vintage contemporâneo.
+          </p>
 
             <div className="space-y-6">
               {impactItems.map((item, index) => {
