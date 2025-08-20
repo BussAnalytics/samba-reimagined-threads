@@ -11,7 +11,7 @@ const FoundersSection = () => {
       bio: "Apaixonada por peças clássicas que nunca saem de moda. Ana traz ao S.A.M.B.A o olhar refinado para vintage autêntico.",
       quote: "Cada peça vintage tem uma alma. Meu papel é encontrar essa alma e conectá-la com quem vai amá-la.",
       specialty: "Peças clássicas dos anos 70-90",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
+      avatar: "/lovable-uploads/51a67531-3ca7-415d-b926-0646caf58231.png"
     },
     {
       name: "Beatriz Santos",
