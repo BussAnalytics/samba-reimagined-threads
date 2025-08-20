@@ -24,9 +24,7 @@ const Header = () => {
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="font-playfair text-3xl font-bold text-gradient">
-              S.A.M.B.A
-            </h1>
+            
           </div>
 
           {/* Desktop Navigation */}
