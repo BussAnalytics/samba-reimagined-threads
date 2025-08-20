@@ -8,21 +8,13 @@ const HeroSection = () => {
       });
     }
   };
-  return <section id="inicio" className="min-h-screen flex items-end justify-center relative overflow-hidden pb-20">
-      {/* Background Image - Otimizada para mobile */}
-      <img 
-        src="/lovable-uploads/a285b69e-603e-438c-b772-f660e80ded67.png" 
-        alt="S.A.M.B.A Hero Background" 
-        className="absolute inset-0 w-full h-full object-cover object-center md:object-top"
-      />
-      
+  return <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Background Image */}
+      <img src="/lovable-uploads/128b40b2-330e-4532-9433-050aeb10b20a.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-cover object-center scale-110" />
+      <img src="" alt="Overlay" className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/40" />
 
       {/* Floating Elements */}
-      <img 
-        src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" 
-        alt="S.A.M.B.A Logo" 
-        className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"
-      />
+      <div className="absolute top-20 left-10 w-20 h-20 bg-primary/20 rounded-full animate-float"></div>
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{
       animationDelay: '1s'
     }}></div>
@@ -31,20 +23,20 @@ const HeroSection = () => {
     }}></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
+      <div className="relative z-10 text-center max-w-4xl mx-0 py-0 px-0 my-0">
+        <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up rounded-sm mx-0 px-px py-0">
           <span className="text-gradient">S.A.M.B.A</span>
         </h1>
         
-        <p className="font-playfair text-xl md:text-2xl lg:text-3xl text-black mb-4 animate-fade-in-up" style={{
+        <p style={{
         animationDelay: '0.2s'
-      }}>
+      }} className="font-playfair text-xl md:text-2xl mb-4 animate-fade-in-up text-neutral-50 lg:text-2xl">
           mais que moda, um manifesto
         </p>
         
-        <p className="font-poppins text-lg md:text-xl text-black mb-8 animate-fade-in-up" style={{
+        <p style={{
         animationDelay: '0.4s'
-      }}>
+      }} className="font-poppins text-lg mb-8 animate-fade-in-up md:text-xl text-neutral-50">
           Sustentável. Autêntico. Em movimento.
         </p>
 
@@ -59,9 +51,7 @@ const HeroSection = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-foreground/50 rounded-full flex justify-center mx-0 py-0 my-0 px-0">
-            <div className="w-1 h-3 bg-foreground/50 rounded-full mt-2 animate-pulse"></div>
-          </div>
+          
         </div>
       </div>
     </section>;
