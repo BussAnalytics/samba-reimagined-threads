@@ -43,7 +43,7 @@ const ContactSection = () => {
   }, {
     icon: MapPin,
     title: "Localização",
-    content: "R. Anitta Garibaldi, 159 - Florianópolis / SC",
+    content: "R. Anita Garibaldi, 159 - Florianópolis / SC",
     link: "#"
   }, {
     icon: Instagram,
