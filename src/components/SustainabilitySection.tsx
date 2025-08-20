@@ -62,7 +62,7 @@ const SustainabilitySection = () => {
           {/* Image */}
           <div className="relative">
             <div className="relative z-10">
-              <img src="/lovable-uploads/87641e44-b1ab-4ab7-a0a8-2b49e88b323d.png" alt="Peças de roupa sustentáveis do S.A.M.B.A" className="w-full h-[500px] object-cover rounded-3xl shadow-elegant" />
+              <img src="/lovable-uploads/b7abc560-1c39-4994-8e0b-a6ee89a690a9.png" alt="Peças de roupa sustentáveis do S.A.M.B.A" className="w-full h-[500px] object-cover rounded-3xl shadow-elegant" />
               
               {/* Overlay Stats */}
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent rounded-3xl"></div>
