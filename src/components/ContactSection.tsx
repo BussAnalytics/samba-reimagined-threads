@@ -48,8 +48,8 @@ const ContactSection = () => {
   }, {
     icon: Instagram,
     title: "Instagram",
-    content: "@sambabreu",
-    link: "https://instagram.com/sambabreu"
+    content: "@sambabrechocolaborativo",
+    link: "https://www.instagram.com/sambabrechocolaborativo/"
   }];
   return <section id="contato" className="section-padding bg-gradient-subtle">
       <div className="container-samba">
