@@ -14,9 +14,9 @@ const FoundersSection = () => {
       avatar: "/lovable-uploads/7d933f55-012b-43f1-b152-8b2c0950bbd9.png"
     },
     {
-      name: "Beatriz Santos",
+      name: "Natalia Faria",
       style: "Minimalista Urbano",
-      bio: "Designer de formação, Bia enxerga beleza na simplicidade e funcionalidade. Curadora das peças atemporais do S.A.M.B.A.",
+      bio: "Natalia é formada em Design de Moda e vê nas roupas um território de expressão, transformação e afeto. No S.A.M.B.A., atua com olhar criativo e autoral, trazendo peças de upcycling. Sua curadoria une ousadia e identidade, valorizando a liberdade de ser e vestir com propósito.",
       quote: "Menos é mais quando cada peça foi escolhida com propósito e cuidado.",
       specialty: "Básicos atemporais e peças funcionais",
       avatar: "/lovable-uploads/d120b554-c035-4b38-a9c7-b1945d6d4e75.png"
