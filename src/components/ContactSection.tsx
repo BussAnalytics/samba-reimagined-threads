@@ -33,8 +33,8 @@ const ContactSection = () => {
   const contactInfo = [{
     icon: Mail,
     title: "E-mail",
-    content: "contato@sambabrechó.com.br",
-    link: "mailto:contato@sambabrechó.com.br"
+    content: "sambabrechocolaborativo@gmail.com",
+    link: "mailto:sambabrechocolaborativo@gmail.com"
   }, {
     icon: Phone,
     title: "WhatsApp",
