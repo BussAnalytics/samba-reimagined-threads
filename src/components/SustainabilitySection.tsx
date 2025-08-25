@@ -101,7 +101,10 @@ const SustainabilitySection = () => {
             Cada compra é um voto no futuro que queremos construir. Junte-se a nós na revolução da moda consciente.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-samba">
+            <button 
+              onClick={() => window.open('https://chat.whatsapp.com/LnAd5y5ajuC5nHhIUgHOlP?mode=ems_copy_c', '_blank')}
+              className="btn-samba cursor-pointer"
+            >
               Entrar no grupo
             </button>
             
