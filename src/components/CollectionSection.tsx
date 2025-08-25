@@ -54,6 +54,82 @@ const CollectionSection = () => {
     curator: "Clara"
   }];
   const filteredPieces = activeFilter === 'Todos' ? pieces : pieces.filter(piece => piece.category === activeFilter);
-  return;
+  
+  return (
+    <section id="colecao" className="section-padding">
+      <div className="container-samba">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gradient mb-6">
+            Nossa Coleção
+          </h2>
+          <p className="font-poppins text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Cada peça é selecionada com carinho pelas nossas curadoras. Descubra tesouros únicos que contam histórias e expressam personalidade.
+          </p>
+        </div>
+
+        {/* Filters */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`px-6 py-3 rounded-full font-poppins font-medium transition-all duration-300 ${
+                activeFilter === filter
+                  ? 'bg-primary text-primary-foreground shadow-lg'
+                  : 'bg-card text-muted-foreground hover:bg-primary/10 hover:text-primary border border-border'
+              }`}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        {/* Pieces Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredPieces.map((piece) => (
+            <div key={piece.id} className="bg-card rounded-xl overflow-hidden border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover">
+              <div className="aspect-[3/4] overflow-hidden">
+                <img 
+                  src={piece.image} 
+                  alt={piece.name}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-sm font-poppins text-primary font-medium">
+                    Curadoria: {piece.curator}
+                  </span>
+                  <span className="text-sm font-poppins text-muted-foreground">
+                    {piece.category}
+                  </span>
+                </div>
+                <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
+                  {piece.name}
+                </h3>
+                <p className="font-poppins text-muted-foreground text-sm mb-4 leading-relaxed">
+                  {piece.description}
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="font-poppins text-lg font-bold text-primary">
+                    {piece.price}
+                  </span>
+                  <div className="flex gap-2">
+                    <button className="p-2 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full transition-all duration-300">
+                      <Heart className="w-4 h-4" />
+                    </button>
+                    <button className="p-2 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-full transition-all duration-300">
+                      <ShoppingBag className="w-4 h-4" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 export default CollectionSection;

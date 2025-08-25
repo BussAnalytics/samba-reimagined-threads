@@ -38,8 +38,8 @@ const ContactSection = () => {
   }, {
     icon: Phone,
     title: "WhatsApp",
-    content: "(11) 99999-9999",
-    link: "https://wa.me/5511999999999"
+    content: "(48) 99133-7240",
+    link: "https://wa.me/5548991337240"
   }, {
     icon: MapPin,
     title: "Localização",
