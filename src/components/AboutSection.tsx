@@ -4,7 +4,7 @@ const AboutSection = () => {
     letter: 'S',
     word: 'Sustentabilidade',
     icon: Recycle,
-    description: 'como a roda da moda que não para.',
+    description: 'Como a roda da moda que não para.',
     color: 'text-accent'
   }, {
     letter: 'A',
