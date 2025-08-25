@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { Filter, Heart, ShoppingBag } from 'lucide-react';
-import vintagePieces from '@/assets/vintage-pieces.jpg';
+import { Heart, ShoppingBag } from 'lucide-react';
 const CollectionSection = () => {
   const [activeFilter, setActiveFilter] = useState('Todos');
   const filters = ['Todos', 'Vintage', 'Minimalista', 'Artístico', 'Acessórios'];
@@ -54,6 +53,114 @@ const CollectionSection = () => {
     curator: "Clara"
   }];
   const filteredPieces = activeFilter === 'Todos' ? pieces : pieces.filter(piece => piece.category === activeFilter);
-  return;
+  
+  return (
+    <section id="acervo" className="section-padding">
+      <div className="container-samba">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gradient mb-6">
+            Nossa Coleção
+          </h2>
+          <p className="font-poppins text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Peças únicas selecionadas com carinho pelas nossas curadoras.
+            Cada item conta uma história e espera para fazer parte da sua.
+          </p>
+        </div>
+
+        {/* Filters */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {filters.map((filter, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveFilter(filter)}
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+                activeFilter === filter
+                  ? 'bg-primary text-primary-foreground'
+                  : 'bg-secondary text-secondary-foreground hover:bg-primary/10'
+              }`}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        {/* Pieces Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredPieces.map((piece, index) => (
+            <div 
+              key={piece.id}
+              className="group bg-card rounded-2xl overflow-hidden card-hover border border-border/50"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="aspect-[3/4] overflow-hidden relative">
+                <img 
+                  src={piece.image}
+                  alt={piece.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute top-4 right-4">
+                  <button className="w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+                    <Heart className="w-5 h-5 text-foreground" />
+                  </button>
+                </div>
+                <div className="absolute bottom-4 left-4">
+                  <span className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                    {piece.category}
+                  </span>
+                </div>
+              </div>
+              
+              <div className="p-6">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="font-playfair text-xl font-bold text-foreground">
+                    {piece.name}
+                  </h3>
+                  <span className="font-poppins text-lg font-bold text-primary">
+                    {piece.price}
+                  </span>
+                </div>
+                
+                <p className="font-poppins text-muted-foreground text-sm leading-relaxed mb-4">
+                  {piece.description}
+                </p>
+                
+                <div className="flex items-center justify-between">
+                  <span className="font-poppins text-xs text-muted-foreground">
+                    Curadoria: {piece.curator}
+                  </span>
+                  <button className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors duration-300">
+                    <ShoppingBag className="w-4 h-4" />
+                    <span className="font-poppins text-sm font-medium">Ver detalhes</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA Section */}
+        <div className="mt-16 text-center bg-card rounded-3xl p-8 md:p-12 border border-border/50">
+          <h3 className="font-playfair text-2xl md:text-3xl font-bold text-foreground mb-4">
+            Gostou do que viu?
+          </h3>
+          <p className="font-poppins text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+            Entre em contato conosco para saber mais sobre as peças disponíveis ou para agendar uma visita ao nosso espaço.
+          </p>
+          <button 
+            onClick={() => {
+              const element = document.getElementById('contato');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="btn-samba"
+          >
+            Entrar em contato
+          </button>
+        </div>
+      </div>
+    </section>
+  );
 };
 export default CollectionSection;

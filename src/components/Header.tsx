@@ -19,12 +19,21 @@ const Header = () => {
       setIsMobileMenuOpen(false);
     }
   };
-  return <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-elegant' : 'bg-transparent'}`}>
+  return (
+    <header 
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled 
+          ? 'bg-background/95 backdrop-blur-sm shadow-elegant' 
+          : 'bg-transparent'
+      }`}
+    >
       <div className="container-samba">
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
-            
+            <h1 className="font-playfair text-2xl md:text-3xl font-bold text-gradient">
+              S.A.M.B.A
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
@@ -38,7 +47,9 @@ const Header = () => {
             <button onClick={() => scrollToSection('mulheres')} className="text-foreground hover:text-primary transition-colors duration-300">
               As Mulheres do S.A.M.B.A
             </button>
-            
+            <button onClick={() => scrollToSection('acervo')} className="text-foreground hover:text-primary transition-colors duration-300">
+              Peças
+            </button>
             <button onClick={() => scrollToSection('contato')} className="text-foreground hover:text-primary transition-colors duration-300">
               Contato
             </button>
@@ -75,6 +86,7 @@ const Header = () => {
             </div>
           </div>}
       </div>
-    </header>;
+    </header>
+  );
 };
 export default Header;
