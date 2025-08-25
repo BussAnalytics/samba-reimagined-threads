@@ -91,16 +91,16 @@ const ContactSection = () => {
                       window.location.href = info.link;
                     }
                   }}
-                  className="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group cursor-pointer w-full max-w-full overflow-hidden"
+                  className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group cursor-pointer w-full max-w-full"
                 >
                       <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-4 h-4 md:w-6 md:h-6 text-white" />
                       </div>
-                      <div className="flex-1 min-w-0 overflow-hidden">
-                        <h4 className="font-poppins font-medium text-foreground text-sm md:text-base truncate">
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-poppins font-medium text-foreground text-sm md:text-base mb-1">
                           {info.title}
                         </h4>
-                        <p className="font-poppins text-muted-foreground text-xs md:text-sm break-words">
+                        <p className={`font-poppins text-muted-foreground text-xs md:text-sm ${info.title === 'E-mail' ? 'whitespace-nowrap text-[10px] md:text-sm' : ''}`}>
                           {info.content}
                         </p>
                       </div>
