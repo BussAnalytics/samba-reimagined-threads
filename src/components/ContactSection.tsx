@@ -39,7 +39,7 @@ const ContactSection = () => {
     icon: Phone,
     title: "WhatsApp",
     content: "(48) 99133-7240",
-    link: "https://wa.me/5548991337240"
+    link: "https://api.whatsapp.com/send/?phone=5548991337240&text&type=phone_number&app_absent=0"
   }, {
     icon: MapPin,
     title: "Localização",
