@@ -102,7 +102,7 @@ const SustainabilitySection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="btn-samba">
-              Descobrir peças
+              Entrar no grupo
             </button>
             
           </div>
