@@ -69,9 +69,6 @@ const Header = () => {
               <button onClick={() => scrollToSection('contato')} className="text-foreground hover:text-primary transition-colors duration-300 text-left">
                 Contato
               </button>
-              <button onClick={() => scrollToSection('acervo')} className="btn-samba w-fit">
-                Ver peças
-              </button>
             </div>
           </div>}
       </div>
