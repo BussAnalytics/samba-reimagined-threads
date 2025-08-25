@@ -27,7 +27,7 @@ const Header = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="container-samba">
+      <div className="container-samba px-4">
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
@@ -36,17 +36,17 @@ const Header = () => {
             </h1>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center space-x-4 lg:space-x-8 flex-wrap">
             <button onClick={() => scrollToSection('inicio')} className="text-foreground hover:text-primary transition-colors duration-300">
               Início
             </button>
             <button onClick={() => scrollToSection('sobre')} className="text-foreground hover:text-primary transition-colors duration-300">
               Sobre
             </button>
-            <button onClick={() => scrollToSection('mulheres')} className="text-foreground hover:text-primary transition-colors duration-300">
-              As Mulheres do S.A.M.B.A
-            </button>
+          <button onClick={() => scrollToSection('mulheres')} className="text-foreground hover:text-primary transition-colors duration-300 text-sm lg:text-base whitespace-nowrap">
+            As Mulheres do S.A.M.B.A
+          </button>
             <button onClick={() => scrollToSection('acervo')} className="text-foreground hover:text-primary transition-colors duration-300">
               Peças
             </button>

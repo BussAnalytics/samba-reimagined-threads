@@ -24,7 +24,7 @@ const SustainabilitySection = () => {
   }];
   return <section id="sustentabilidade" className="section-padding">
       <div className="container-samba">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <div>
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gradient mb-6">
@@ -77,7 +77,7 @@ const SustainabilitySection = () => {
                 <h4 className="font-playfair text-xl font-bold text-foreground mb-3">
                   Nosso Impacto
                 </h4>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="text-center">
                     <div className="font-poppins text-2xl font-bold text-primary">2k+</div>
                     <div className="font-poppins text-xs text-muted-foreground">Peças circulando</div>

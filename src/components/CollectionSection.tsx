@@ -86,11 +86,11 @@ const CollectionSection = () => {
         </div>
 
         {/* Pieces Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {filteredPieces.map((piece, index) => (
             <div 
               key={piece.id}
-              className="group bg-card rounded-2xl overflow-hidden card-hover border border-border/50"
+              className="group bg-card rounded-2xl overflow-hidden card-hover border border-border/50 w-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-[3/4] overflow-hidden relative">
