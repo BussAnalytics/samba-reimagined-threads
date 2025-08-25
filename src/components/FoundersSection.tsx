@@ -45,11 +45,11 @@ const FoundersSection = () => {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:grid lg:grid-cols-1 xl:grid-cols-3 gap-6 lg:gap-8">
+        <div className="hidden lg:flex lg:flex-col xl:grid xl:grid-cols-3 gap-6 lg:gap-8 w-full">
           {founders.map((founder, index) => (
             <div 
               key={index}
-              className="group bg-card rounded-3xl overflow-hidden card-hover border border-border/50 w-full"
+              className="group bg-card rounded-3xl overflow-hidden card-hover border border-border/50 w-full flex-shrink-0"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="aspect-square overflow-hidden">
