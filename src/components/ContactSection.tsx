@@ -51,7 +51,7 @@ const ContactSection = () => {
     content: "@sambabrechocolaborativo",
     link: "https://www.instagram.com/sambabrechocolaborativo/"
   }];
-  return <section id="contato" className="section-padding bg-gradient-subtle w-full overflow-hidden">
+  return <section id="contato" className="section-padding bg-gradient-subtle">
       <div className="container-samba">
         {/* Header */}
         <div className="text-center mb-16">
@@ -64,43 +64,39 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 w-full max-w-full">
+        <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Form */}
           
 
           {/* Contact Information */}
-          <div className="space-y-6 lg:space-y-8 w-full">
-            <div className="w-full">
-              <h3 className="font-playfair text-xl md:text-2xl font-bold text-foreground mb-4 md:mb-6 px-2">
+          <div className="space-y-8">
+            <div>
+              <h3 className="font-playfair text-2xl font-bold text-foreground mb-6">
                 Outras formas de contato
               </h3>
               
-              <div className="space-y-4 md:space-y-6 px-2">
+              <div className="space-y-6">
                 {contactInfo.map((info, index) => {
                 const Icon = info.icon;
-                return <div 
-                  key={index} 
-                  onClick={() => {
-                    if (index === 2) {
-                      window.open("https://www.google.com/search?q=samba+brech%C3%B3+colaborativo&oq=samba+brech%C3%B3+colaborativo&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDYwOTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8", '_blank');
-                    } else if (index === 3) {
-                      window.open("https://www.instagram.com/sambabrechocolaborativo/", '_blank');
-                    } else if (info.link.startsWith('http')) {
-                      window.open(info.link, '_blank');
-                    } else if (info.link.startsWith('mailto:')) {
-                      window.location.href = info.link;
-                    }
-                  }}
-                  className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group cursor-pointer w-full max-w-full"
-                >
-                      <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <Icon className="w-4 h-4 md:w-6 md:h-6 text-white" />
+                return <div key={index} onClick={() => {
+                  if (index === 2) {
+                    window.open("https://www.google.com/search?q=samba+brech%C3%B3+colaborativo&oq=samba+brech%C3%B3+colaborativo&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDYwOTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8", '_blank');
+                  } else if (index === 3) {
+                    window.open("https://www.instagram.com/sambabrechocolaborativo/", '_blank');
+                  } else if (info.link.startsWith('http')) {
+                    window.open(info.link, '_blank');
+                  } else if (info.link.startsWith('mailto:')) {
+                    window.location.href = info.link;
+                  }
+                }} className="flex items-center space-x-4 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group cursor-pointer">
+                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <h4 className="font-poppins font-medium text-foreground text-sm md:text-base mb-1">
+                      <div>
+                        <h4 className="font-poppins font-medium text-foreground">
                           {info.title}
                         </h4>
-                        <p className={`font-poppins text-muted-foreground text-xs md:text-sm ${info.title === 'E-mail' ? 'whitespace-nowrap text-[10px] md:text-sm' : ''}`}>
+                        <p className="font-poppins text-muted-foreground text-xs">
                           {info.content}
                         </p>
                       </div>
