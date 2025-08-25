@@ -28,9 +28,7 @@ const Footer = () => {
                 <a href="https://instagram.com/sambabreu" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="mailto:contato@sambabrechó.com.br" className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300">
-                  <Mail className="w-5 h-5" />
-                </a>
+                
               </div>
             </div>
 
