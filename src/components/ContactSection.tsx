@@ -78,17 +78,21 @@ const ContactSection = () => {
               <div className="space-y-6">
                 {contactInfo.map((info, index) => {
                 const Icon = info.icon;
-                return <div key={index} onClick={() => {
-                  if (index === 2) {
-                    window.open("https://www.google.com/search?q=samba+brech%C3%B3+colaborativo&oq=samba+brech%C3%B3+colaborativo&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDYwOTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8", '_blank');
-                  } else if (index === 3) {
-                    window.open("https://www.instagram.com/sambabrechocolaborativo/", '_blank');
-                  } else if (info.link.startsWith('http')) {
-                    window.open(info.link, '_blank');
-                  } else if (info.link.startsWith('mailto:')) {
-                    window.location.href = info.link;
-                  }
-                }} className="flex items-center space-x-4 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group cursor-pointer">
+                return <div 
+                  key={index} 
+                  onClick={index === 0 ? undefined : () => {
+                    if (index === 2) {
+                      window.open("https://www.google.com/search?q=samba+brech%C3%B3+colaborativo&oq=samba+brech%C3%B3+colaborativo&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCDYwOTBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8", '_blank');
+                    } else if (index === 3) {
+                      window.open("https://www.instagram.com/sambabrechocolaborativo/", '_blank');
+                    } else if (info.link.startsWith('http')) {
+                      window.open(info.link, '_blank');
+                    } else if (info.link.startsWith('mailto:')) {
+                      window.location.href = info.link;
+                    }
+                  }}
+                  className={`flex items-center space-x-4 p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all duration-300 card-hover group ${index === 0 ? '' : 'cursor-pointer'}`}
+                >
                       <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
