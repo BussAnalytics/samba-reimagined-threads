@@ -20,16 +20,29 @@ const HeroSection = () => {
     }}></div>
       
 
-      {/* S.A.M.B.A Title positioned above the image */}
-      <div className="absolute top-50 left-1/2 transform -translate-x-1/2 z-10">
-        <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold animate-fade-in-up">
+      {/* S.A.M.B.A Title positioned above the image - mobile only */}
+      <div className="absolute top-50 left-1/2 transform -translate-x-1/2 z-10 md:hidden">
+        <h1 className="font-playfair text-5xl font-bold animate-fade-in-up">
           <span className="text-gradient my-0 mx-px px-0 py-0 text-6xl">S.A.M.B.A</span>
         </h1>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <p className="font-playfair text-xl md:text-2xl lg:text-3xl text-black mb-4 animate-fade-in-up" style={{
+        {/* Combined title for desktop/tablet */}
+        <div className="hidden md:block mb-4">
+          <h1 className="font-playfair text-7xl lg:text-8xl font-bold animate-fade-in-up mb-2">
+            <span className="text-gradient">S.A.M.B.A</span>
+          </h1>
+          <p className="font-playfair text-2xl lg:text-3xl text-black animate-fade-in-up" style={{
+            animationDelay: '0.2s'
+          }}>
+            mais que moda, um manifesto
+          </p>
+        </div>
+        
+        {/* Mobile subtitle only */}
+        <p className="md:hidden font-playfair text-xl text-black mb-4 animate-fade-in-up" style={{
         animationDelay: '0.2s'
       }}>
           mais que moda, um manifesto
