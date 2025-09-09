@@ -21,7 +21,7 @@ const HeroSection = () => {
       
 
       {/* S.A.M.B.A Title positioned above the image */}
-      <div className="absolute top-40 left-1/2 transform -translate-x-1/2 z-10">
+      <div className="absolute top-50 left-1/2 transform -translate-x-1/2 z-10">
         <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold animate-fade-in-up">
           <span className="text-gradient my-0 mx-px px-0 py-0 text-6xl">S.A.M.B.A</span>
         </h1>
