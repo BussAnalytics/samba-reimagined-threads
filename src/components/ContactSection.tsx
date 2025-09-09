@@ -16,7 +16,7 @@ const ContactSection = () => {
     // Simulate form submission
     toast({
       title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve. Obrigada por escolher o S.A.M.B.A! 💚"
+      description: "Entraremos em contato em breve. Obrigada por escolher o S.A.M.B.A.! 💚"
     });
     setFormData({
       name: '',

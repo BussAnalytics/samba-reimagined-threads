@@ -10,20 +10,20 @@ const HeroSection = () => {
   };
   return <section id="inicio" className="min-h-screen flex items-end justify-center relative overflow-hidden pb-20">
       {/* Background Image - Otimizada para mobile */}
-      <img src="/lovable-uploads/8491829f-b8a7-406c-acab-dd8f4bd0e5d8.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-top" />
+      <img src="/lovable-uploads/8491829f-b8a7-406c-acab-dd8f4bd0e5d8.png" alt="S.A.M.B.A. Hero Background" className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-top" />
       
 
       {/* Floating Elements */}
-      <img src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" alt="S.A.M.B.A Logo" className="absolute top-20 left-10 w-20 h-20 bg-white rounded-full animate-float" />
+      <img src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" alt="S.A.M.B.A. Logo" className="absolute top-20 left-10 w-20 h-20 bg-white rounded-full animate-float" />
       <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{
       animationDelay: '1s'
     }}></div>
       
 
-      {/* S.A.M.B.A Title positioned above the image - mobile only */}
+      {/* S.A.M.B.A. Title positioned above the image - mobile only */}
       <div className="absolute top-44 left-1/2 transform -translate-x-1/2 z-10 md:hidden">
         <h1 className="font-playfair text-5xl font-bold animate-fade-in-up">
-          <span className="text-gradient my-0 mx-px px-0 py-0 text-6xl">S.A.M.B.A</span>
+          <span className="text-gradient my-0 mx-px px-0 py-0 text-6xl">S.A.M.B.A.</span>
         </h1>
       </div>
 
@@ -32,7 +32,7 @@ const HeroSection = () => {
         {/* Combined title for desktop/tablet */}
         <div className="hidden md:block mb-4">
           <h1 className="font-playfair text-7xl lg:text-8xl font-bold animate-fade-in-up mb-2">
-            <span className="text-gradient">S.A.M.B.A</span>
+            <span className="text-gradient">S.A.M.B.A.</span>
           </h1>
           <p className="font-playfair text-2xl lg:text-3xl text-black animate-fade-in-up" style={{
             animationDelay: '0.2s'

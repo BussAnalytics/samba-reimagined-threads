@@ -36,7 +36,7 @@ const Header = () => {
               Sobre
             </button>
           <button onClick={() => scrollToSection('mulheres')} className="text-foreground hover:text-primary transition-colors duration-300 text-sm lg:text-base whitespace-nowrap">
-            As Mulheres do S.A.M.B.A
+            As Mulheres do S.A.M.B.A.
           </button>
             
             <button onClick={() => scrollToSection('contato')} className="text-foreground hover:text-primary transition-colors duration-300">

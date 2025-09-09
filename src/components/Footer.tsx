@@ -16,7 +16,7 @@ const Footer = () => {
             {/* Brand Column */}
             <div className="lg:col-span-2">
               <h3 className="font-playfair text-3xl font-bold text-gradient mb-4">
-                S.A.M.B.A
+                S.A.M.B.A.
               </h3>
               <p className="font-poppins text-muted-foreground leading-relaxed mb-6 max-w-md">
                 Mais que um brechó, somos um movimento de moda consciente. 
@@ -45,7 +45,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <button onClick={() => scrollToSection('sobre')} className="font-poppins text-muted-foreground hover:text-primary transition-colors duration-300">
-                    Sobre o S.A.M.B.A
+                    Sobre o S.A.M.B.A.
                   </button>
                 </li>
                 <li>
@@ -94,7 +94,7 @@ const Footer = () => {
         <div className="border-t border-border/50 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-muted-foreground">
-              <span className="font-poppins text-sm">© 2025 S.A.M.B.A Brechó. Todos os direitos reservados.</span>
+              <span className="font-poppins text-sm">© 2025 S.A.M.B.A. Brechó. Todos os direitos reservados.</span>
             </div>
             
             <div className="flex items-center space-x-2 text-muted-foreground">
@@ -108,7 +108,7 @@ const Footer = () => {
         {/* Impact Statement */}
         <div className="text-center py-8 border-t border-border/50">
           <p className="font-playfair text-xl md:text-2xl font-medium text-gradient">
-            "Vista sua história. Vista S.A.M.B.A."
+            "Vista sua história. Vista S.A.M.B.A.."
           </p>
         </div>
       </div>

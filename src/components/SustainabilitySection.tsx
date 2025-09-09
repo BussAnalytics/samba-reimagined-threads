@@ -31,7 +31,7 @@ const SustainabilitySection = () => {
               Sustentabilidade em Movimento
             </h2>
             
-            <p className="font-poppins text-lg text-muted-foreground leading-relaxed mb-8">A logo reflete o espírito do projeto: circularidade, elegância e autenticidade. O acrônimo S.A.M.B.A aparece com pontos marcando a individualidade de cada valor, organizados dentro de um formato circular que simboliza: O ciclo do consumo consciente, a coletividade e o movimento, a ideia de um selo ou carimbo com identidade. A tipografia foi escolhida com base em sua expressão de contraste e personalidade, remetendo a algo feito à mão, com alma e estilo vintage contemporâneo.</p>
+            <p className="font-poppins text-lg text-muted-foreground leading-relaxed mb-8">A logo reflete o espírito do projeto: circularidade, elegância e autenticidade. O acrônimo S.A.M.B.A. aparece com pontos marcando a individualidade de cada valor, organizados dentro de um formato circular que simboliza: O ciclo do consumo consciente, a coletividade e o movimento, a ideia de um selo ou carimbo com identidade. A tipografia foi escolhida com base em sua expressão de contraste e personalidade, remetendo a algo feito à mão, com alma e estilo vintage contemporâneo.</p>
 
             <div className="space-y-6">
               {impactItems.map((item, index) => {
@@ -62,7 +62,7 @@ const SustainabilitySection = () => {
           {/* Image */}
           <div className="relative">
             <div className="relative z-10">
-              <img src="/lovable-uploads/b7abc560-1c39-4994-8e0b-a6ee89a690a9.png" alt="Peças de roupa sustentáveis do S.A.M.B.A" className="w-full h-[500px] object-cover rounded-3xl shadow-elegant" />
+              <img src="/lovable-uploads/b7abc560-1c39-4994-8e0b-a6ee89a690a9.png" alt="Peças de roupa sustentáveis do S.A.M.B.A." className="w-full h-[500px] object-cover rounded-3xl shadow-elegant" />
             </div>
 
             {/* Background Elements */}

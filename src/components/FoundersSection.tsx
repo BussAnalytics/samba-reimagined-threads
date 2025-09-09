@@ -8,7 +8,7 @@ const FoundersSection = () => {
     {
       name: "Debora Caminha",
       style: "Vintage Elegante",
-      bio: "Débora transforma sua paixão pelo vintage em curadoria única, escolhendo peças atemporais que unem simplicidade, funcionalidade e estilo para o S.A.M.B.A.",
+      bio: "Débora transforma sua paixão pelo vintage em curadoria única, escolhendo peças atemporais que unem simplicidade, funcionalidade e estilo para o S.A.M.B.A..",
       quote: "Cada peça vintage tem uma alma. Meu papel é encontrar essa alma e conectá-la com quem vai amá-la.",
       specialty: "Peças clássicas dos anos 70-90",
       avatar: "/lovable-uploads/7d933f55-012b-43f1-b152-8b2c0950bbd9.png"
@@ -16,7 +16,7 @@ const FoundersSection = () => {
     {
       name: "Natalia Faria",
       style: "Minimalista Urbano",
-      bio: "Natalia é formada em Design de Moda e vê nas roupas um território de expressão, transformação e afeto. No S.A.M.B.A., atua com olhar criativo e autoral, trazendo peças de upcycling. Sua curadoria une ousadia e identidade, valorizando a liberdade de ser e vestir com propósito.",
+      bio: "Natalia é formada em Design de Moda e vê nas roupas um território de expressão, transformação e afeto. No S.A.M.B.A.., atua com olhar criativo e autoral, trazendo peças de upcycling. Sua curadoria une ousadia e identidade, valorizando a liberdade de ser e vestir com propósito.",
       quote: "Menos é mais quando cada peça foi escolhida com propósito e cuidado.",
       specialty: "Básicos atemporais e peças funcionais",
       avatar: "/lovable-uploads/d120b554-c035-4b38-a9c7-b1945d6d4e75.png"
@@ -24,7 +24,7 @@ const FoundersSection = () => {
     {
       name: "Rosane Brizola",
       style: "Artístico Contemporâneo",
-      bio: "Apaixonada por peças clássicas que nunca saem de moda, Rosane traz ao S.A.M.B.A.,elegância atemporal e estilo único.",
+      bio: "Apaixonada por peças clássicas que nunca saem de moda, Rosane traz ao S.A.M.B.A..,elegância atemporal e estilo único.",
       quote: "A moda é arte que vestimos. Cada look é uma oportunidade de contar nossa história.",
       specialty: "Peças criativas e estampas únicas",
       avatar: "/lovable-uploads/fa9f2894-4d4c-4f77-9e5d-2c48ccbf8f06.png"
@@ -37,7 +37,7 @@ const FoundersSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-gradient mb-6">
-            As Mulheres do S.A.M.B.A
+            As Mulheres do S.A.M.B.A.
           </h2>
           <p className="font-poppins text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Três mulheres, três brechós, um só propósito: fazer da moda uma forma de resistência, arte e expressão.
