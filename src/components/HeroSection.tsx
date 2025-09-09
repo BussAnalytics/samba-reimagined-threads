@@ -8,7 +8,7 @@ const HeroSection = () => {
       });
     }
   };
-  return <section id="inicio" className="min-h-screen flex items-end justify-center relative overflow-hidden pb-20">
+  return <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-32">
       {/* Background Image - Otimizada para mobile */}
       <img src="/lovable-uploads/8491829f-b8a7-406c-acab-dd8f4bd0e5d8.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-top" />
       
