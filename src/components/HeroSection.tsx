@@ -8,20 +8,20 @@ const HeroSection = () => {
       });
     }
   };
-  return <section id="inicio" className="min-h-screen flex items-end justify-center relative overflow-hidden pb-20">
+  return <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image - Otimizada para mobile */}
-      <img src="/lovable-uploads/8491829f-b8a7-406c-acab-dd8f4bd0e5d8.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-top" />
+      <img src="/lovable-uploads/8491829f-b8a7-406c-acab-dd8f4bd0e5d8.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-cover" />
       
 
       {/* Floating Elements */}
-      <img src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" alt="S.A.M.B.A Logo" className="absolute top-20 left-10 w-20 h-20 bg-white rounded-full animate-float" />
-      <div className="absolute bottom-32 right-16 w-16 h-16 bg-accent/30 rounded-full animate-float" style={{
+      <img src="/lovable-uploads/877b1cdc-3923-4267-94b0-0c9f2e3fcffa.png" alt="S.A.M.B.A Logo" className="absolute top-4 sm:top-8 md:top-20 left-4 sm:left-6 md:left-10 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-white rounded-full animate-float" />
+      <div className="absolute bottom-20 sm:bottom-24 md:bottom-32 right-8 sm:right-12 md:right-16 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-accent/30 rounded-full animate-float" style={{
       animationDelay: '1s'
     }}></div>
       
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto -mt-16 sm:-mt-12 md:-mt-8">
         <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
           <span className="text-gradient">S.A.M.B.A</span>
         </h1>
