@@ -20,12 +20,15 @@ const HeroSection = () => {
     }}></div>
       
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
+      {/* S.A.M.B.A Title positioned above the image */}
+      <div className="absolute top-32 left-1/2 transform -translate-x-1/2 z-10">
+        <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold animate-fade-in-up">
           <span className="text-gradient my-0 mx-px px-0 py-0">S.A.M.B.A</span>
         </h1>
-        
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <p className="font-playfair text-xl md:text-2xl lg:text-3xl text-black mb-4 animate-fade-in-up" style={{
         animationDelay: '0.2s'
       }}>
