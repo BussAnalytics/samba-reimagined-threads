@@ -10,7 +10,7 @@ const HeroSection = () => {
   };
   return <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image - Otimizada para mobile */}
-      <img src="/lovable-uploads/8491829f-b8a7-406c-acab-dd8f4bd0e5d8.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-cover" />
+      <img src="/lovable-uploads/8491829f-b8a7-406c-acab-dd8f4bd0e5d8.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-cover object-center sm:object-cover sm:object-center md:object-cover md:object-top lg:object-cover lg:object-center" />
       
 
       {/* Floating Elements */}
