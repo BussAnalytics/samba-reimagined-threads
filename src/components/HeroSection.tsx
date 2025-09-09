@@ -23,7 +23,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
-          <span className="text-gradient py-[500px] my-0 mx-px px-0">S.A.M.B.A</span>
+          <span className="text-gradient my-0 mx-px px-0 py-0">S.A.M.B.A</span>
         </h1>
         
         <p className="font-playfair text-xl md:text-2xl lg:text-3xl text-black mb-4 animate-fade-in-up" style={{
