@@ -8,7 +8,7 @@ const HeroSection = () => {
       });
     }
   };
-  return <section id="inicio" className="min-h-screen flex items-end justify-center relative overflow-hidden pb-20">
+  return <section id="inicio" className="min-h-screen relative overflow-hidden">
       {/* Background Image - Otimizada para mobile */}
       <img src="/lovable-uploads/8491829f-b8a7-406c-acab-dd8f4bd0e5d8.png" alt="S.A.M.B.A Hero Background" className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-top" />
       
@@ -20,12 +20,15 @@ const HeroSection = () => {
     }}></div>
       
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
+      {/* Title at top */}
+      <div className="absolute top-8 left-0 right-0 z-10 text-center px-4">
+        <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl font-bold animate-fade-in-up">
           <span className="text-gradient">S.A.M.B.A</span>
         </h1>
-        
+      </div>
+
+      {/* Bottom Content */}
+      <div className="absolute bottom-20 left-0 right-0 z-10 text-center px-4 max-w-4xl mx-auto">        
         <p className="font-playfair text-xl md:text-2xl lg:text-3xl text-black mb-4 animate-fade-in-up" style={{
         animationDelay: '0.2s'
       }}>
