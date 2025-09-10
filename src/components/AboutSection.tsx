@@ -22,7 +22,7 @@ const AboutSection = () => {
     letter: 'B',
     word: 'Brechó',
     icon: ShoppingBag,
-    description: 'Conceitual e Urbana.',
+    description: 'Reusar é reinventar',
     color: 'text-accent'
   }, {
     letter: 'A',
