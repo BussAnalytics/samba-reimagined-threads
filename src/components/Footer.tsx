@@ -80,7 +80,7 @@ const Footer = () => {
                   🌍 Movimento
                 </li>
                 <li className="font-poppins text-muted-foreground">
-                  👗 Beleza
+                  👗 Brecho
                 </li>
                 <li className="font-poppins text-muted-foreground">
                   🧵 Autoral
