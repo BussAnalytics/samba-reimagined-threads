@@ -79,7 +79,7 @@ const Footer = () => {
                 <li className="font-poppins text-muted-foreground">
                   🌍 Movimento
                 </li>
-                <li className="font-poppins text-muted-foreground">👗 Brecho</li>
+                <li className="font-poppins text-muted-foreground">👗 Brechó</li>
                 <li className="font-poppins text-muted-foreground">
                   🧵 Autoral
                 </li>
