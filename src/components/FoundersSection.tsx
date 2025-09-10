@@ -15,7 +15,7 @@ const FoundersSection = () => {
     },
     {
       name: "Natalia Faria",
-      style: "Minimalista Urbano",
+      style: "Conceitual e Urbano",
       bio: "Natalia é formada em Design de Moda e vê nas roupas um território de expressão, transformação e afeto. No S.A.M.B.A.., atua com olhar criativo e autoral, trazendo peças de upcycling. Sua curadoria une ousadia e identidade, valorizando a liberdade de ser e vestir com propósito.",
       quote: "Menos é mais quando cada peça foi escolhida com propósito e cuidado.",
       specialty: "Básicos atemporais e peças funcionais",
